@@ -9,6 +9,10 @@ import Resume from '../pages/Resume';
 import Testimonials from '../pages/Testimonials';
 import Contact from '../pages/Contact';
 import NotFound from '../pages/NotFound';
+import PrivacyPolicy from '../pages/PrivacyPolicy';
+import TermsOfService from '../pages/TermsOfService';
+
+
 
 export const router = createBrowserRouter([
   {
@@ -24,6 +28,10 @@ export const router = createBrowserRouter([
       { path: 'testimonials', Component: Testimonials },
       { path: 'contact', Component: Contact },
       { path: '*', Component: NotFound },
+      { path: 'PrivacyPolicy', Component: PrivacyPolicy },
+      { path: 'terms-of-service', Component: TermsOfService },
+
+
     ],
   },
 ]);

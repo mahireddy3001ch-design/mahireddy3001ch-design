@@ -1,4 +1,4 @@
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 import { Shield, Lock, Eye, Database, UserCheck, Mail } from 'lucide-react';
 
 const sections = [
@@ -56,7 +56,7 @@ const sections = [
     icon: Mail,
     title: 'Contact Us',
     content: [
-      'For privacy-related questions, contact us at privacy@example.com',
+      'For privacy-related questions, contact us at mahireddy3001.ch@gmail.com',
       'We will respond to all inquiries within 48 hours',
       'You can request a copy of your data at any time',
     ],
@@ -82,9 +82,9 @@ export default function PrivacyPolicy() {
           >
             <Shield className="w-10 h-10 text-violet-600 dark:text-violet-400" />
           </motion.div>
-          <h1 className="mb-6">Privacy Policy</h1>
+          <h1 className="mb-6 text-4xl md:text-5xl font-bold">Privacy Policy</h1>
           <p className="text-xl text-gray-600 dark:text-gray-400">
-            Last updated: November 28, 2025
+            Last updated: December 11, 2024
           </p>
           <motion.div
             initial={{ scaleX: 0 }}
@@ -120,16 +120,19 @@ export default function PrivacyPolicy() {
               whileHover={{ scale: 1.02 }}
               className="group p-8 bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 dark:border-gray-700"
             >
-              <div className="flex items-start gap-4">
+              <div className="flex items-start gap-6">
+                {/* Icon */}
                 <motion.div
                   whileHover={{ rotate: 360, scale: 1.1 }}
                   transition={{ duration: 0.6 }}
-                  className="flex-shrink-0 w-14 h-14 rounded-xl bg-gradient-to-br from-violet-600 to-indigo-600 flex items-center justify-center shadow-lg"
+                  className="flex-shrink-0 w-16 h-16 rounded-xl bg-gradient-to-br from-violet-600 to-indigo-600 flex items-center justify-center shadow-lg"
                 >
-                  <section.icon className="w-7 h-7 text-white" />
+                  <section.icon className="w-8 h-8 text-white" />
                 </motion.div>
+
+                {/* Content */}
                 <div className="flex-1">
-                  <h2 className="mb-4 group-hover:text-violet-600 dark:group-hover:text-violet-400 transition-colors">
+                  <h2 className="mb-4 text-2xl font-bold group-hover:text-violet-600 dark:group-hover:text-violet-400 transition-colors">
                     {section.title}
                   </h2>
                   <ul className="space-y-3">
@@ -144,9 +147,9 @@ export default function PrivacyPolicy() {
                       >
                         <motion.div
                           whileHover={{ scale: 1.5 }}
-                          className="w-2 h-2 rounded-full bg-gradient-to-r from-violet-600 to-indigo-600 mt-2 flex-shrink-0"
+                          className="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-violet-600 to-indigo-600 mt-2.5 flex-shrink-0"
                         />
-                        <span>{item}</span>
+                        <span className="text-base leading-relaxed">{item}</span>
                       </motion.li>
                     ))}
                   </ul>
@@ -170,15 +173,15 @@ export default function PrivacyPolicy() {
           >
             <Shield className="w-12 h-12 mx-auto mb-4" />
           </motion.div>
-          <h3 className="mb-3 text-white">Questions About Our Privacy Policy?</h3>
-          <p className="text-violet-100 mb-6">
+          <h3 className="mb-3 text-white text-2xl font-bold">Questions About Our Privacy Policy?</h3>
+          <p className="text-violet-100 mb-6 text-lg">
             If you have any questions or concerns, please don't hesitate to reach out.
           </p>
           <motion.a
             href="/contact"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="inline-block px-8 py-3 bg-white text-violet-600 rounded-full shadow-xl"
+            className="inline-block px-8 py-3 bg-white text-violet-600 rounded-full shadow-xl font-semibold"
           >
             Contact Us
           </motion.a>

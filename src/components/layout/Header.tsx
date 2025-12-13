@@ -34,7 +34,7 @@ export default function Header() {
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
+        isScrolled || isMobileMenuOpen
           ? 'bg-white/80 dark:bg-gray-950/80 backdrop-blur-lg shadow-sm'
           : 'bg-transparent'
       }`}
@@ -143,7 +143,7 @@ export default function Header() {
                       onClick={() => setIsMobileMenuOpen(false)}
                       className={`block py-2 text-lg transition-colors ${
                         location.pathname === link.path
-                          ? 'text-violet-600 dark:text-violet-400'
+                          ? 'text-violet-600 dark:text-violet-400 font-semibold'
                           : 'text-gray-700 dark:text-gray-300'
                       }`}
                     >

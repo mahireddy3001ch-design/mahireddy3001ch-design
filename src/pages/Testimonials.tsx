@@ -119,10 +119,10 @@ export default function Testimonials() {
           className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16"
         >
           {[
-            { label: 'Happy Clients', value: '50+' },
-            { label: 'Projects Completed', value: '120+' },
-            { label: 'Average Rating', value: '5.0' },
-            { label: 'Repeat Clients', value: '85%' },
+            { label: 'Happy Clients', value: '14+' },
+            { label: 'Projects Completed', value: '10+' },
+            { label: 'Average Rating', value: '4.8' },
+            { label: 'Repeat Clients', value: '75%' },
           ].map((stat, index) => (
             <motion.div
               key={index}

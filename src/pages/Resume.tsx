@@ -4,17 +4,17 @@ import { Download, Briefcase, GraduationCap, Award, Target } from 'lucide-react'
 const highlights = [
   {
     icon: Target,
-    title: '6+ Years Experience',
+    title: '1+ Years Experience',
     description: 'Professional motion design and animation',
   },
   {
     icon: Award,
-    title: '50+ Projects',
+    title: '10+ Projects',
     description: 'Delivered for clients worldwide',
   },
   {
     icon: Briefcase,
-    title: 'Fortune 500 Clients',
+    title: 'Fortune 14 Clients',
     description: 'Google, Meta, Apple, and more',
   },
   {
@@ -24,41 +24,40 @@ const highlights = [
   },
 ];
 
-const experience = [
+ const experience = [
   {
-    title: 'Senior Motion Designer',
-    company: 'Digital Studio',
-    location: 'San Francisco, CA',
-    period: '2024 - Present',
+    title: 'Data Science Intern',
+    company: 'Deeksha Technologies Private Limited',
+    location: 'Nellore, AP',
+    period: 'Nov 2024 - Feb 2025',
     achievements: [
-      'Lead designer for Fortune 500 brand campaigns',
-      'Increased client engagement metrics by 250%',
-      'Mentored 5 junior designers to proficiency',
-      'Established company-wide motion design standards',
+      'Involved in Data Cleaning',
+      'Generated insights from the data',
+      'Created Data Visualization using Power BI',
+      'Story Telling',
     ],
   },
   {
-    title: 'Motion Designer',
-    company: 'Creative Agency',
-    location: 'Los Angeles, CA',
-    period: '2022 - 2024',
+    title: 'UI/UX Design Intern',
+    company: 'The Krita Technologies Private Limited',
+    location: 'Nellore, AP',
+    period: 'Jul 2023 - Aug 2023',
     achievements: [
-      'Created 30+ brand animations and explainer videos',
-      'Won 3 industry awards for animation excellence',
-      'Reduced project delivery time by 40%',
-      'Built reusable motion design system',
+      'Created 10+ brand animations',
+      'Designed intuitive and user friendly designs',
+      'Created Low Fedility and High Fedility Wireframes',
+      'Problem Statement, User Personas',
+      'Reduced project delivery time by 30%',
     ],
   },
   {
-    title: 'Junior Designer',
-    company: 'Tech Startup',
+    title: 'Artificial Intelligence & Python Intern',
+    company: 'Remarkskill Education',
     location: 'Remote',
-    period: '2020 - 2022',
+    period: 'Jun 2022 - Jul 2022',
     achievements: [
-      'Designed UI animations for mobile applications',
+      'Created a IMDB movie based AI project',
       'Collaborated with development team on implementation',
-      'Created micro-interaction library',
-      'Improved app store ratings by focusing on UX polish',
     ],
   },
 ];

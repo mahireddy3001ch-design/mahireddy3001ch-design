@@ -72,7 +72,7 @@ export default function Footer() {
             © {new Date().getFullYear()} Portfolio. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-gray-600 dark:text-gray-400">
-            <Link to="/privacy-policy" className="hover:text-violet-600 dark:hover:text-violet-400 transition-colors">
+            <Link to="/PrivacyPolicy" className="hover:text-violet-600 dark:hover:text-violet-400 transition-colors">
               Privacy Policy
             </Link>
             <Link to="/terms-of-service" className="hover:text-violet-600 dark:hover:text-violet-400 transition-colors">

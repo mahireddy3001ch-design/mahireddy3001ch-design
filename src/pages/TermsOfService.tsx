@@ -83,9 +83,9 @@ export default function TermsOfService() {
           >
             <Scale className="w-10 h-10 text-indigo-600 dark:text-indigo-400" />
           </motion.div>
-          <h1 className="mb-6">Terms of Service</h1>
+          <h1 className="mb-6 text-4xl md:text-5xl font-bold">Terms of Service</h1>
           <p className="text-xl text-gray-600 dark:text-gray-400">
-            Last updated: November 28, 2025
+            Last updated: December 11, 2024
           </p>
           <motion.div
             initial={{ scaleX: 0 }}
@@ -114,23 +114,26 @@ export default function TermsOfService() {
           {sections.map((section, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, x: index % 2 === 0 ? -30 : 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-50px' }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              whileHover={{ scale: 1.02, rotateY: 2 }}
+              whileHover={{ scale: 1.02 }}
               className="group p-8 bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 dark:border-gray-700"
             >
-              <div className="flex items-start gap-4">
+              <div className="flex items-start gap-6">
+                {/* Icon */}
                 <motion.div
                   whileHover={{ rotate: [0, -10, 10, -10, 0], scale: 1.1 }}
                   transition={{ duration: 0.5 }}
-                  className="flex-shrink-0 w-14 h-14 rounded-xl bg-gradient-to-br from-indigo-600 to-purple-600 flex items-center justify-center shadow-lg"
+                  className="flex-shrink-0 w-16 h-16 rounded-xl bg-gradient-to-br from-indigo-600 to-purple-600 flex items-center justify-center shadow-lg"
                 >
-                  <section.icon className="w-7 h-7 text-white" />
+                  <section.icon className="w-8 h-8 text-white" />
                 </motion.div>
+
+                {/* Content */}
                 <div className="flex-1">
-                  <h2 className="mb-4 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+                  <h2 className="mb-4 text-2xl font-bold text-gray-900 dark:text-gray-100 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
                     {section.title}
                   </h2>
                   <ul className="space-y-3">
@@ -145,9 +148,9 @@ export default function TermsOfService() {
                       >
                         <motion.div
                           whileHover={{ scale: 1.5, rotate: 180 }}
-                          className="w-2 h-2 rounded-full bg-gradient-to-r from-indigo-600 to-purple-600 mt-2 flex-shrink-0"
+                          className="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-indigo-600 to-purple-600 mt-2.5 flex-shrink-0"
                         />
-                        <span>{item}</span>
+                        <span className="text-base leading-relaxed">{item}</span>
                       </motion.li>
                     ))}
                   </ul>
@@ -163,15 +166,15 @@ export default function TermsOfService() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="mt-12 p-8 bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700"
+          className="mt-12 p-8 bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 shadow-lg"
         >
-          <h2 className="mb-4">Governing Law</h2>
-          <p className="text-gray-600 dark:text-gray-400 mb-4">
+          <h2 className="mb-4 text-2xl font-bold text-gray-900 dark:text-gray-100">Governing Law</h2>
+          <p className="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
             These terms and conditions are governed by and construed in accordance with the laws,
             and you irrevocably submit to the exclusive jurisdiction of the courts in that location.
           </p>
-          <h3 className="mb-3 mt-6">Changes to Terms</h3>
-          <p className="text-gray-600 dark:text-gray-400">
+          <h3 className="mb-3 mt-6 text-xl font-bold text-gray-900 dark:text-gray-100">Changes to Terms</h3>
+          <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
             We reserve the right to revise these terms at any time. By using this website, you are
             expected to review these terms on a regular basis to ensure you understand all terms and
             conditions governing use of this website.
@@ -192,15 +195,15 @@ export default function TermsOfService() {
           >
             <FileText className="w-12 h-12 mx-auto mb-4" />
           </motion.div>
-          <h3 className="mb-3 text-white">Questions About Our Terms?</h3>
-          <p className="text-indigo-100 mb-6">
+          <h3 className="mb-3 text-white text-2xl font-bold">Questions About Our Terms?</h3>
+          <p className="text-indigo-100 mb-6 text-lg">
             If you have any questions about these Terms of Service, please contact us.
           </p>
           <motion.a
             href="/contact"
             whileHover={{ scale: 1.05, boxShadow: '0 20px 40px rgba(0,0,0,0.2)' }}
             whileTap={{ scale: 0.95 }}
-            className="inline-block px-8 py-3 bg-white text-indigo-600 rounded-full shadow-xl"
+            className="inline-block px-8 py-3 bg-white text-indigo-600 rounded-full shadow-xl font-semibold"
           >
             Contact Us
           </motion.a>
