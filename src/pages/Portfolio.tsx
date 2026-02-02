@@ -55,7 +55,7 @@ const projects = [
   },
   {
     id: 7,
-    title: 'Character Animation Reel',
+    title: 'Portfolio',
     category: 'Motion Design',
     thumbnail: 'character animation',
     year: '2023',
@@ -63,7 +63,7 @@ const projects = [
   },
   {
     id: 8,
-    title: 'Luxury Brand Redesign',
+    title: 'Signature Detection using ANN',
     category: 'Final Year',
     thumbnail: 'luxury brand design',
     year: '2024',
@@ -71,10 +71,10 @@ const projects = [
   },
   {
     id: 9,
-    title: 'Architectural Visualization',
+    title: 'Efficient Storage Management for Social Network Events',
     category: 'Data Analysis',
     thumbnail: 'architectural render',
-    year: '2023',
+    year: '2024',
     tags: ['Architecture', '3D', 'Unreal Engine'],
   },
 ];
@@ -105,7 +105,7 @@ export default function Portfolio() {
           >
             <span className="text-sm">Selected Works</span>
           </motion.div>
-          <h1 className="mb-6">Portfolio</h1>
+          <h1 className="mb-6">Portfolio (this section is under development)</h1>
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
             A showcase of my latest projects spanning motion design, UI/UX, branding, and 3D visualization
           </p>

@@ -100,14 +100,16 @@ export default function Resume() {
           <p className="text-xl text-gray-600 dark:text-gray-400 mb-8 max-w-3xl mx-auto">
             A comprehensive overview of my professional experience, skills, and achievements
           </p>
-          <motion.button
-            whileHover={{ scale: 1.05, boxShadow: '0 10px 30px rgba(139, 92, 246, 0.3)' }}
-            whileTap={{ scale: 0.95 }}
-            className="px-8 py-4 bg-gradient-to-r from-violet-600 to-indigo-600 text-white rounded-full flex items-center gap-2 mx-auto shadow-lg shadow-violet-500/30"
-          >
-            <Download className="w-5 h-5" />
-            Download Resume
-          </motion.button>
+          <motion.a
+  href="/resume.pdf"
+  download
+  whileHover={{ scale: 1.05, boxShadow: "0 10px 30px rgba(139, 92, 246, 0.3)" }}
+  whileTap={{ scale: 0.95 }}
+  className="inline-flex w-fit px-8 py-4 bg-gradient-to-r from-violet-600 to-indigo-600 text-white rounded-full items-center gap-2 mx-auto"
+>
+  <Download className="h-5 w-5" />
+  Download Resume
+</motion.a>
         </motion.div>
 
         {/* Highlights */}
